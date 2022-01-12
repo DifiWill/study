@@ -25,10 +25,10 @@ SECRET_KEY = 'django-insecure-z%!0tr6axe@hb1$beuc6%b2debodlj^)yib@q0@ruqzzscvc(a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']               # 允許用來存取服務的主機名稱
 
 
-# Application definition
+## Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'topic',
-    ]
+    'topic',                       # 加入自訂的應用程式 topic
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
